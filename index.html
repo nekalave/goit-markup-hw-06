@@ -88,11 +88,11 @@
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>
                         </div>
-                        <div class="form-label-wrapper">
+                        <div class="form-comment-label-wrapper">
                             <label class="modal-form-label" for="comment">Коментар</label>
                             <textarea class="form-textarea" id="comment" placeholder="Введіть текст"></textarea>
                         </div>
-                        <div class="form-label-wrapper">
+                        <div class="form-user-privacy-wrapper">
                             <input
                                     class="modal-check-input visually-hidden"
                                     type="checkbox"
@@ -106,7 +106,7 @@
                                         <use href="./images/icons.svg#icon-check"></use>
                                     </svg>
                                 </span>
-                                Погоджуюся з розсилкою та приймаю
+                                Погоджуюся з розсилкою та приймаю&nbsp;
                                 <a class="user-privacy-link" href="">Умови договору</a>
                             </label>
                         </div>
@@ -410,7 +410,7 @@
 </main>
 <footer class="footer">
     <div class="container footer-box">
-        <div>
+        <div class="footer-address-wrapper">
         <a class="footer-logo" href="./index.html"><span class="logo-pr">Web</span>Studio</a>
         <address class="footer-address-main">
             <ul class="footer-address-list">
@@ -465,11 +465,10 @@
             </ul>
         </div>
             <form class="footer-form">
-                <h2 class="footer-subscribe-title">
+                <label class="footer-subscribe-title" for="user_email">
                     Підпишіться на розсилку
-                </h2>
+                </label>
                 <div class="footer-form-label">
-                <label for="user_email" ></label>
                 <input class="footer-subscribe-input" id="user_email" type="email" name="email" placeholder="E-mail"/>
                 <button class="footer-subscribe-button" type="submit">
                     Підписатися

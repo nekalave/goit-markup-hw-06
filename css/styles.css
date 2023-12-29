@@ -453,6 +453,10 @@ img {
     color: var(--actent-color);
 }
 
+.footer-address-wrapper {
+    width: 231px;
+}
+
 .footer-box {
     display: flex;
     align-items: baseline;
@@ -519,19 +523,25 @@ img {
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
 .footer-form-label {
     display: flex;
+    margin-top: 20px;
 }
 
 .footer-subscribe-input {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
     width: 358px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
-
+    padding-left: 16px;
     background: rgba(33, 150, 243, 0.00);
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -701,6 +711,7 @@ img {
     min-height: 581px;
     min-width: 528px;
     border-radius: 4px;
+    padding: 40px;
     background-color: var(--primary-white-color);
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     transition: scale 250ms var(--animation-function);
@@ -743,20 +754,42 @@ img {
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
 }
 
 .form-label-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 41px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.form-label-wrapper:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-comment-label-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-user-privacy-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
     position: relative;
 }
 
 .modal-form-label {
     display: flex;
     margin-bottom: 4px;
+    color: var(--secundary-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
 }
 
 .form-input {
@@ -791,7 +824,6 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.20);
     resize: none;
     outline: transparent;
-    margin-bottom: 20px;
     transition: border-color 250ms var(--animation-function);
 }
 
@@ -822,7 +854,6 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border: none;
     cursor: pointer;
-    margin-bottom: 50px;
     transition: background-color 250ms var(--animation-function);
 }
 .modal-submit-button:hover,
@@ -847,6 +878,9 @@ img {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-user-privacy-checkbox {
@@ -860,9 +894,6 @@ img {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: inline-flex;
-    align-items: baseline;
-    justify-content: center;
     fill: transparent;
     cursor: pointer;
     transition: background-color 250ms var(--animation-function),
@@ -870,6 +901,7 @@ img {
                 fill 250ms var(--animation-function);
 }
 
+.modal-check-input:focus + .user-privacy-title .modal-check-box,
 .modal-check-input:checked + .user-privacy-title .modal-check-box {
     background-color: var(--actent-color);
     border: none;
