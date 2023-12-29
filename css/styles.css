@@ -901,12 +901,12 @@ img {
                 fill 250ms var(--animation-function);
 }
 
+.modal-check-input:focus + .user-privacy-title .modal-check-box {
+    border: 1px solid var(--actent-color);;
+}
+
 .modal-check-input:checked + .user-privacy-title .modal-check-box {
     background-color: var(--actent-color);
     border: none;
     fill: var(--actent-color);
-}
-
-.modal-check-input:focus + .user-privacy-title .modal-check-box {
-    border: 1px solid var(--actent-color);;
 }
